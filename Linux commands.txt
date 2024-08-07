@@ -1,0 +1,138 @@
+Linux Commands
+----------------
+
+top => to see cpu usage
+
+df -h => to see HardDisk usage
+
+free -h  => to see RAM Details
+
+date => to see current date and time
+
+ls => list everything in present working directory
+
+mkdir devops => to create a folder named "devops"
+
+ls -l => details of every files and folder in current directory
+
+touch newfile.txt  => to create a new empty file .
+
+clear = to clear the terminal console.
+
+cd => To change directory
+
+cd .. => to move to parent directory
+
+rm devops_file.txt  => to delete file "devops_file.txt"
+
+rm -r cloud => To delete folder named "cloud"
+
+rmdir cloud => To delete folder named "cloud"
+
+cat demofile.txt => to see the content of demofile.txt
+
+echo "hello dosto" => to print quoted string on the console
+
+echo "hello dosto" > demofile.txt  => to write the quoted content to demofile.txt
+   Note:
+    - if The "demofile.txt" is not present then it will create a new one
+
+zcat => To see the content inside zip folder
+
+head myfile.txt  => to print top 5 lines of "myfile.txt"
+
+tail myfile.txt  => to print bottom 5 lines of "myfile.txt"
+
+tail -f myfile.txt => it monitor and print the last line.
+
+less myfile.txt  => it displays the content page by page.
+
+cp source.txt folder1/ => to copy source file to folder1 
+
+cp folder1/src.txt folder2/  => to copy src.txt from folder1 to folder2
+
+cp -r folder1/ folder2/ => to copy folder1 inside the folder2
+
+mv file1.txt ../folder1/  => to move file1.txt to it parent directory folder1
+
+mv folder1/ folder2/  => To rename folder1 to folder2
+
+wc myfile.txt => to get no-of-lines, words and size
+
+Links are like shortcuts 
+Hard-link -> even if original file gets deleted it is alive
+soft-link -> if original file got deleted shortcut will also get deleted.
+
+
+
+
+
+
+
+
+
+
+Linux Networking Commands
+-------------------------
+
+ping => it shows whether data transferred between server on internet
+  example:
+     ping trainwithshubham.com
+
+netstat => It shows the network statistics
+	for example :
+		like which Internet your system is connected to.
+
+ifconfig  => it will display all the network interfaces available in the system.
+
+traceroute youtube.com  => it will list all the IP's it connected to before reaching "youtube.com"
+
+tracepath youtube.com  => it will list all the path it connected to before reaching "youtube.com"
+
+mtr youtube.com  => it stands for my trace route. It is a combination of ping and traceroute commands. It is a network diagnostic tool that continuously sends packets showing ping time for each hop.
+
+nslookup youtube.com  => it is a command-line tool to retrieve a domain's information, including its IP address and DNS record.
+
+telnet youtube.com 80 => it is used to communicate with another host using the Telnet protocol. You can use it to connect to a remote server by specifying the host and the port like this: telnet host port .
+
+hostname => displays the name of the current host system. 
+
+ip address show => it will show all the ip address of the system
+
+iwconfig => it is used to configure and display information about wireless network interfaces.
+
+dig youtube.com => dig command stands for Domain Information Groper. It is used for retrieving information about DNS name servers
+
+whois google.com  => retrieve information about domain names, IP addresses, and network devices registered with the Internet Corporation for Assigned Names and Numbers (ICANN).
+
+ifplugstatus =>  tells us whether a cable is plugged into our network interface or not.
+
+curl -X GET https://dummy.restapiexample.com/api/v1/employees => it is used to transfer data to and from a server. 
+
+curl -X GET https://dummy.restapiexample.com/api/v1/employees | jq => to show the api data beautifully.
+
+wget https://file-examples.com/wp-content/storage/2017/02/file-sample_100kB.doc =>  Wget is the non-interactive network downloader which is used to download files from the server even when the user has not logged on to the system and it can work in the background without hindering the current process.
+
+watch mtr youtube.com => Linux watch command lets you repeatedly run a command or utility in regular time intervals.
+
+watch -n 5 top => Here, watch command lets you repeatedly run a command or utility in every 5 sec.
+
+nmap -v google.com => Nmap is Linux command-line tool for network exploration and security auditing. It is used for the following purposes: 
+Real time information of a network
+Detailed information of all the IPs activated on your network
+Number of ports open in a network
+Provide the list of live hosts
+Port, OS and Host scanning
+
+route  => it is a command used to view and manipulate the IP routing table.
+
+
+			
+
+
+
+
+
+
+
+
